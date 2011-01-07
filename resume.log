@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.12.9)  7 JAN 2011 17:48
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.12.9)  7 JAN 2011 18:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -453,21 +453,21 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 26.
  (./resume.aux)
 \openout1 = `resume.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 31.
 (/usr/share/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -533,7 +533,7 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box33
-Package hyperref Info: Link coloring ON on input line 32.
+Package hyperref Info: Link coloring ON on input line 31.
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
@@ -545,75 +545,70 @@ Package: gettitlestring 2009/12/18 v1.3 Cleanup title references (HO)
 )
 \c@section@level=\count122
 )
-LaTeX Info: Redefining \ref on input line 32.
-LaTeX Info: Redefining \pageref on input line 32.
-LaTeX Info: Redefining \nameref on input line 32.
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
  (./resume.out) (./resume.out)
 \@outlinefile=\write4
 \openout4 = `resume.out'.
 
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 34.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 33.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 34.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 34.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 33.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 33.
  (/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 34.
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 33.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 34.
+(Font)              <14.4> on input line 33.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 34.
+(Font)              <7> on input line 33.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 34.
+(Font)              <9> on input line 33.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 34.
+(Font)              <6> on input line 33.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 34.
+(Font)              <5> on input line 33.
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <10> not available
-(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 37.
+(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <12> not available
-(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 37.
+(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 36.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 55.
 
-Overfull \hbox (8.72174pt too wide) in paragraph at lines 44--45
-[]\T1/ptm/m/n/10 PostgreSQL, Apache, Lighttpd, Git, CVS, Sub-ver-sion, XFree86/
-Xorg, MySQL,
- []
-
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 56.
 (/usr/share/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 56.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 55.
  [1
 
 {//var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 127.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 112.
  [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 127.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
  (./resume.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 127.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
 Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 10702 strings out of 495059
- 169652 string characters out of 3182255
+ 10700 strings out of 495059
+ 169634 string characters out of 3182255
  260947 words of memory out of 3000000
- 13624 multiletter control sequences out of 15000+200000
- 36198 words of font info for 46 fonts, out of 3000000 for 9000
+ 13623 multiletter control sequences out of 15000+200000
+ 33476 words of font info for 44 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 47i,9n,50p,359b,364s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,9n,50p,359b,328s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/c
 ourier/ucrb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></u
 sr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fon
 ts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on resume.pdf (2 pages, 72640 bytes).
+Output written on resume.pdf (2 pages, 71061 bytes).
 PDF statistics:
  62 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream
