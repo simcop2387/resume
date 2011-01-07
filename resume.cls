@@ -64,7 +64,7 @@
 \newcommand{\@webpage}{}
 
 \renewcommand{\author}[1]{\renewcommand{\@authorname}{#1}}
-\newcommand{\email}[1]{\urldef{\@email}{\url}{<#1>}}
+\newcommand{\email}[1]{\urldef{\@email}{\url}{#1}}
 \newcommand{\streetaddress}[1]{\renewcommand{\@streetaddress}{#1}}
 \newcommand{\citystatezip}[1]{\renewcommand{\@citystatezip}{#1}}
 \newcommand{\phone}[1]{\renewcommand{\@phone}{#1}}
@@ -89,19 +89,19 @@
   % just on the LHS if only one is.
   \begin{small}%
     \ifthenelse{\equal{\@webpage}{}}{%
-      \ifthenelse{\equal{\@phone}{}}{}{\@phone\par\nointerlineskip\noindent}%
+      \ifthenelse{\equal{\@streetaddress}{}}{}{\@streetaddress\par\nointerlineskip\noindent}%
     } {%
-      \ifthenelse{\equal{\@phone}{}}{\@webpage\par\nointerlineskip\noindent}{%
+      \ifthenelse{\equal{\@streetaddress}{}}{\@webpage\par\nointerlineskip\noindent}{%
         \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}%
-          \@phone & \@webpage%
+          \@streetaddress & \@webpage%
         \end{tabular*}%
         \par\nointerlineskip\noindent%
       }%
     }%
-    \ifthenelse{\equal{\@streetaddress}{} \and%
-      \equal{\@citystatezip}{}}{}{%
-      \ifthenelse{\equal{\@streetaddress}{} \or %
-        \equal{\@citystatezip}{}}{%
+    \ifthenelse{\equal{\@citystatezip}{} \and%
+      \equal{\@phone}{}}{}{%
+      \ifthenelse{\equal{\@citystatezip}{} \or %
+        \equal{\@phone}{}}{%
           \ClassError{resume}{%
             Only one of \protect\streetaddress and \protect\citystatezip given
           }{%
@@ -111,7 +111,7 @@
         }{%
 %
           \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}%
-            \@streetaddress & \@citystatezip%
+            \@citystatezip & \@phone %
           \end{tabular*}%
         }}%
 %     \ifthenelse{\equal{\@webpage}{}}{}{%
