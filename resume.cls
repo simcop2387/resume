@@ -114,9 +114,6 @@
             \@citystatezip & \@phone %
           \end{tabular*}%
         }}%
-     \ifthenelse{\equal{\@webpage}{}}{}{%
-       \@webpage%
-     }%
   \end{small}
 }}
 
