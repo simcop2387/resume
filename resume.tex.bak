@@ -3,90 +3,149 @@
 % (c) 2007 Ryan Voots <simcop2387@yahoo.com>
 % $Id: resume.tex,v 1.7 2007/05/19 22:36:29 ryan Exp $
 %
-\documentclass[11pt]{article}
-\usepackage{fullpage}
-\textheight=9.0in
-\pagestyle{empty}
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
+
+\documentclass[table]{resume}
+
+% my info
+\author{Ryan Voots}
+\phone{678-551-2387}
+\email{ryan@voots.org}
+\webpage{http://www.simcop2387.info}
+\streetaddress{101 Columbus Ct}
+\citystatezip{Dallas GA, 30132}
+
+% \usepackage{fullpage}
+%	\addtolength{\oddsidemargin}{-.875in}
+%	\addtolength{\evensidemargin}{-.875in}
+%	\addtolength{\topmargin}{-.875in}
+%
+%	\addtolength{\textwidth}{1.75in}
+%	\addtolength{\textheight}{1.75in}
+
+% is this the real life?  is this just fantasy?
+\usepackage[unicode=true, 
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=true,pdfborder={0 0 1},backref=false,colorlinks=true]
+ {hyperref}
+\hypersetup{pdftitle={MediaTemple resume},
+ pdfauthor={Ryan Voots},
+ pdfsubject={If you're reading this, I made this in LaTeX and I'm glad you're really scouring my resume.},
+ pdfkeywords={media, temple, resume, mediatemple, are, you, really, a, search, engine}}
+
+
+% For more compact lists.
+\usepackage{paralist}
+
+\usepackage{colortbl}
+
+\definecolor{lightgray}{gray}{0.95}
+\definecolor{darkgray}{gray}{0.90}
+
+% for urls
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=blue
+}
+
+% Multi-colored rules! (John Q is desperate)
+\definecolor{ruleendcolor}{rgb}{0.2, 0.2, 0.6}
+
 \begin{document}
 
-I am interested in your position of kennel worker.  I am a hard working college student who has recently moved to the Dallas area.  I am available to work any schedule.  
-
-I feel confident that I will be an excellent care taker for your facility. I feel I will be an excellent candidate because I avid animal lover and feel they should get the best possible treatment.  As stated in my resume I have had many years of experience caring for animals.
-
-Please consider my credentials and experience in your search for a qualified employee.  I can be reached at the above address and phone to arrange for a personal intervew at your convience.  I will be happy to furnish references.
-
-Thank you for your time and consideration.  I hope to hear from you soon.
-Sincerly,
-Ryan J. Voots
-
-\pagebreak
-
-\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
-\textbf{Ryan J Voots}  & \\
-101 Columbus Court  & 678-363-6602 \\
-Dallas, GA 30132 & simcop2387@yahoo.com \\
-\end{tabular*}
-\\
+\maketitle
 \vspace{0.1in}
-{\large \textbf{Work History}}
 
-\begin{itemize}
+\section{Objective}
+To start a career developing software that will challenge my knowledge and require me to expand my abilities...
+To obtain employment in an environment that utilizes my skills in programming and systems administration while challenging me to
+expand my current knowledge base.
 
-\item
-	\begin{tabular*}{6in}{l@{\extracolsep{\fill}}r}
-		\textbf{Cashier/Stock} & February 2002 - December 2002 \\
-		                       & May 2003 - July 2003 \\
-				       & December 2003 - January 2004 \\
-		CVS Pharmacy & Hickory, NC \\
-	\end{tabular*}
+\section{Skills}
+\begin{description}
+\item[Programming Languages:]
+Perl, C/C++, C\#, Javascript, Java, SQL, PHP
+\item[Operating Systems:]
+Linux, Windows NT/2000/XP, some Solaris and BSD
+\item[Applications and Libraries:]
+PostgreSQL, MySQL, Apache, Lighttpd, Git, CVS, Subversion
+\item[Miscellaneous:]
+HTML; CSS; IPv4 and IPv6 networking; strong verbal and written communication skills; excellent troubleshooting, problem solving, and debugging skills; very quick learner.
+\end{description}
 
-	\begin{itemize}
-		\item Operated the cash register at the front of the store \\
-		\item Assisted customers in a polite manner \\
-		\item Kept the stock room organized \\
-	\end{itemize}
+\section{Experience}
 
-\item 
-	\begin{tabular*}{6in}{l@{\extracolsep{\fill}}r}
-		\textbf{Dog Watcher} & 1999 - 2003 \\
-		Reverand Thomas Sanford & Hickory, NC \\
-	\end{tabular*}
-	
-	\begin{itemize}
-		\item Regulary took care of their family dog while owners were on vacation
-		\begin{itemize}
-			\item Taking it for walks
-			\item Making sure the dog was properly groomed and fed
-		\end{itemize}
-	\end{itemize}
-\end{itemize}
+\subsection{Open Source Work}
 
-{\large \textbf{Education}}
+\affiliation[Creator, Lead Designer, and Lead Developer]{Farnsworth Programming Language}{2008-}
 
-	\begin{itemize}
-	\item 
-	\begin{tabular*}{6in}{l@{\extracolsep{\fill}}r}
-		\textbf{Belmont Abbey College} & Belmont, NC \\
-		Major in Computer and Information Science, 2003 - Currently Attending \\
-	\end{tabular*}
+\begin{compactitem}
+\item Farnsworth is a dynamically typed functional and imperative programming language.  
+It is being designed for applied mathematics and physics.  Currently has a working implementation 
+consisting of 26,000 lines of code, including a testing suite for the parts of the language that are finalized.
+\item More Information: \url{http://www.simcop2387.info/}
+\end{compactitem}
 
-	\item
-	\begin{tabular*}{6in}{l@{\extracolsep{\fill}}r}
-		\textbf{Fred T. Foard Highschool} Graduated 2003 & Newton, NC \\
-	\end{tabular*}
+\affiliation[Web Designer, Javascript Programmer]{Kona}{2010}
 
-	\end{itemize}
+\begin{compactitem}
+\item Kona is a simple Wiki application created using modern technologies in Perl and XHTML 
+with CSS3 for a modern layout with MultiMarkup for creating documents.
+\item More Information: \url{http://github.com/symkat/Kona}
+\end{compactitem}
 
+\affiliation[Creator, Lead Programmer]{MediaSched}{2005-}
 
-{\large \textbf{Other Qualifications}}
+\begin{compactitem}
+\item MediaSched is a program for easily running any kind of scheduled and unscheduled media playback.  Supporting the use of existing calendar/scheduling software for the selection of simple to complex playlists.
+\item More Information: \url{http://github.com/simcop2387/MediaSched}
+\end{compactitem}
 
-\begin{itemize}
-	\item Have had dogs at home all my life, my first dog lived to be 14 years old.  I now have a bloodhound that is 5 and is extremely healthy and well taken care of.
-	\item Have regularly walked, fed, and cared for both dogs.
-	\item Volunteered to built houses for Habitat for Humanity.
-	\item Have made quilts for the homeless.
-\end{itemize}
+\affiliation[Creator, Lead Programmer]{AutoSub}{2009-}
+
+\begin{compactitem}
+\item A project to aide in the creation of closed captions by identifing portions of 
+video that contain human speech using various types of signal analysis.
+\item More Information: \url{https://github.com/simcop2387/autosub}
+\end{compactitem}
+
+\affiliation[Bug tester, Programmer]{Freedroid RPG}{2003-2004}
+
+\begin{compactitem}
+\item Found and fixed various buffer overflows and other bugs
+\item Did some optimization on the original OpenGL and other graphics code in the project
+\end{compactitem}
+
+\subsection{Work History}
+
+\affiliation[Web Designer, Javascript Programmer]{Personal Project}{2010}
+\begin{compactitem}
+\item Created several designs for \url{http://www.notanewyorker.com/} and related sites.
+\end{compactitem}
+
+\affiliation[Programmer]{Cyphrus Federation of Underwater Activities}{2010}
+
+\begin{compactitem}
+\item Created interactive dive tables to plan no decompression dives without the aide of an expensive dive computer.
+\item More Information: \url{http://www.oceanssearch.com/}
+\end{compactitem}
+
+\section{Education}
+\affiliation{Belmont Abbey College}{2003-2007}
+\affiliation{Georgia Highlands College}{2008-2009}
+\affiliation{Kennesaw State University}{2010}
+
+\begin{compactitem}
+\item Studying for a degree in Computer Science.  Focusing on programming, networks, and databases.
+\end{compactitem}
+
+\section{References}
+\begin{tabular}{lll}
+\rowcolor{white} Michael Parkhurst & Software Developer at Media Temple & mparkhurst@mediatemple.net \\
+\rowcolor{lightgray} Peter Krumins & Software Developer/Blogger & peter@catonmat.net \\
+\rowcolor{white} James Halliday & Software Developer & mail@substack.net
+\end{tabular}
 \end{document}
