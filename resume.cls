@@ -114,9 +114,9 @@
             \@citystatezip & \@phone %
           \end{tabular*}%
         }}%
-%     \ifthenelse{\equal{\@webpage}{}}{}{%
-%       \@webpage%
-%     }%
+     \ifthenelse{\equal{\@webpage}{}}{}{%
+       \@webpage%
+     }%
   \end{small}
 }}
 
@@ -127,7 +127,10 @@
   \vspace{\headerbuffer}\par\nointerlineskip}
 
 \renewcommand{\subsection}[1]{%
-  \goodbreak\vspace{\secskip}\par\nointerlineskip\vspace{-1em}\textbf{\flushleft{#1}:}\par%
+  \goodbreak\vspace{\secskip}\par\nointerlineskip%
+  \textbf{#1}\vspace{\headerbuffer}\par\nointerlineskip%
+  \noindent\lrule{\linewidth}{0.4pt}%
+  \vspace{\headerbuffer}\par\nointerlineskip
 }
 
 % General catch-all for either educational or job affiliation.

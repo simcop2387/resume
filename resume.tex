@@ -3,7 +3,9 @@
 % (c) 2007 Ryan Voots <simcop2387@yahoo.com>
 % $Id: resume.tex,v 1.7 2007/05/19 22:36:29 ryan Exp $
 %
-\documentclass{resume}
+
+\documentclass[table]{resume}
+
 % my info
 \author{Ryan Voots}
 \phone{678-551-2387}
@@ -13,15 +15,31 @@
 \citystatezip{Dallas GA, 30132}
 
 % \usepackage{fullpage}
-	\addtolength{\oddsidemargin}{-.875in}
-	\addtolength{\evensidemargin}{-.875in}
-	\addtolength{\topmargin}{-.875in}
+%	\addtolength{\oddsidemargin}{-.875in}
+%	\addtolength{\evensidemargin}{-.875in}
+%	\addtolength{\topmargin}{-.875in}
+%
+%	\addtolength{\textwidth}{1.75in}
+%	\addtolength{\textheight}{1.75in}
 
-	\addtolength{\textwidth}{1.75in}
-	\addtolength{\textheight}{1.75in}
+% is this the real life?  is this just fantasy?
+\usepackage[unicode=true, 
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=true,pdfborder={0 0 1},backref=false,colorlinks=true]
+ {hyperref}
+\hypersetup{pdftitle={MediaTemple resume},
+ pdfauthor={Ryan Voots},
+ pdfsubject={If you're reading this, I made this in LaTeX and I'm glad you're really scouring my resume.},
+ pdfkeywords={media, temple, resume, mediatemple, are, you, really, a, search, engine}}
+
 
 % For more compact lists.
 \usepackage{paralist}
+
+\usepackage{colortbl}
+
+\definecolor{lightgray}{gray}{0.95}
+\definecolor{darkgray}{gray}{0.90}
 
 % for urls
 \usepackage{hyperref}
@@ -78,6 +96,13 @@ with CSS3 for a modern layout with MultiMarkup for creating documents.
 \item More Information: \url{http://github.com/symkat/Kona}
 \end{compactitem}
 
+\affiliation[Creator, Lead Programmer]{MediaSched}{2005-}
+
+\begin{compactitem}
+\item MediaSched is a program for 
+\item More Information: \url{http://github.com/symkat/Kona}
+\end{compactitem}
+
 \affiliation[Creator, Lead Programmer]{AutoSub}{2009-}
 
 \begin{compactitem}
@@ -90,7 +115,7 @@ video that contain human speech using various types of signal analysis.
 
 \begin{compactitem}
 \item Found and fixed various buffer overflows and other bugs
-\item Did some optimization on the original OpenGL code in the project
+\item Did some optimization on the original OpenGL and other graphics code in the project
 \end{compactitem}
 
 \subsection{Work History}
@@ -103,7 +128,7 @@ video that contain human speech using various types of signal analysis.
 \affiliation[Programmer]{Cyphrus Federation of Underwater Activities}{2010}
 
 \begin{compactitem}
-\item Created interactive dive tables to plan no decompression diving.
+\item Created interactive dive tables to plan no decompression dives without the aide of an expensive dive computer.
 \item More Information: \url{http://www.oceanssearch.com/}
 \end{compactitem}
 
@@ -117,9 +142,9 @@ video that contain human speech using various types of signal analysis.
 \end{compactitem}
 
 \section{References}
-\begin{tabular}{l|c|l}
-Michael Parkhurst & Software Developer @ (mt) Media Temple & mparkhurst@mediatemple.net \\
-Peter Krumins & Software Developer/Blogger & peter@catonmat.net \\
-James Halliday & Software Developer & mail@substack.net
+\begin{tabular}{lll}
+\rowcolor{white} Michael Parkhurst & Software Developer at Media Temple & mparkhurst@mediatemple.net \\
+\rowcolor{lightgray} Peter Krumins & Software Developer/Blogger & peter@catonmat.net \\
+\rowcolor{white} James Halliday & Software Developer & mail@substack.net
 \end{tabular}
 \end{document}
