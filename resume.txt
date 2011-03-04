@@ -1,0 +1,68 @@
+      
+AUTHOR: Ryan Voots 678-551-2387 
+EMAIL:  ryan@voots.org 
+http://www.simcop2387.info 
+101 Columbus Ct 
+Dallas GA, 30132
+
+Objective 
+---------
+To obtain employment in an environment that utilizes my
+skills  in  programming  and systems administration while challenging me to
+expand my current knowledge base.
+
+     
+Skills 
+------
+     (@)   [Programming Languages:] Perl, C/C++, C#, Javascript, Java, SQL, PHP 
+     (@)   [Operating Systems:] Linux, Windows NT/2000/XP, some Solaris and BSD 
+     (@)   [Applications and Libraries:]   PostgreSQL,  MySQL,  Apache, Lighttpd, Git, CVS, Subversion 
+     (@)   [Miscellaneous:]  HTML;  CSS;  IPv4  and IPv6 networking; strong verbal and written communication skills; excellent troubleshooting, problem solving, and debugging skills; very quick learner. 
+     
+Experience
+----------
+     
+Open Source Work
+================
+     Farnsworth Programming Language 2008-
+     [Creator,  Lead  Designer,  and  Lead Developer]
+
+     (@)   Farnsworth  is  a  dynamically  typed  functional and imperative programming  language.  It  is  being  designed for applied mathematics and physics.  Currently has a working implementation consisting of 26,000 lines of  code,  including a testing suite for the parts of the language that are finalized. 
+     (@)   More Information: http://www.simcop2387.info/ \end{compactitem}
+
+
+     Kona 2010
+     [Web Designer, Javascript Programmer]
+
+     (@)   Kona   is   a  simple  Wiki  application  created  using  modern technologies  in  Perl  and  XHTML  with  CSS3  for  a  modern  layout with MultiMarkup for creating documents. 
+     (@)   More          Information:         http://github.com/symkat/Kona
+
+     AutoSub 2009-
+     [Creator, Lead Programmer]
+
+     (@)   A  project  to  aide  in  the  creation  of  closed  captions by identifing  portions of video that contain human speech using various types of signal analysis. 
+     (@)   More      Information:     https://github.com/simcop2387/autosub
+
+     Freedroid RPG 2003-2004
+     [Bug tester, Programmer]
+
+     (@)   Found and fixed various buffer overflows and other bugs 
+     (@)   Did some optimization on the original OpenGL code in the project 
+     
+Work History
+============
+     Not a New Yorker 2010
+     [Web  Designer, Javascript Programmer]
+     (@)   Created  several  designs  for http://www.notanewyorker.com/ and related sites.
+
+     Cyphrus Federation of Underwater Activities 2010
+     [Programmer]
+     (@)   Created interactive dive tables to plan no decompression diving. 
+     (@)   More Information: http://www.oceanssearch.com/
+
+     
+References
+==========  
+Michael  Parkhurst    Software Developer @ Media Temple  mparkhurst@mediatemple.net 
+Peter Krumins         Software Developer/Blogger         peter@catonmat.net 
+James Halliday        Software Developer                 mail@substack.net

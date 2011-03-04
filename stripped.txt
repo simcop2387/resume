@@ -1,0 +1,13 @@
+I'm writing you after hearing about you from my father, whom you spoke to on your recent flight to Boston.
+I'd like to introduce myself to you and give you an idea of what I can do.
+
+I am experienced with both hardware and software.
+I've designed and written a number of software projects that are open source.
+Along with being able to take a software project from start to finish; I have experience writing technical documentation for them, writing tests to show that the software performs to the specifications and documentation. On the hardware side I have rack mounted existing servers to create a more organized workspace.  Installed security cameras and set up a dedicated monitoring system to record any movement.
+
+I can be contacted by email at \href{mailto:ryan@voots.org}{ryan@voots.org}, or by phone at 678-551-2387.
+Thank you for taking the time to look at my resume to see if you know anyone who could use my help.
+
+
+
+
