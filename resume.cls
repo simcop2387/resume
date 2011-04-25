@@ -21,6 +21,9 @@
 \RequirePackage{pgf}
 \RequirePackage{pgfshade}
 \RequirePackage{xxcolor}
+\RequirePackage{auto-pst-pdf,pst-barcode}
+\RequirePackage{float}
+\RequirePackage{wrapfig}
 
 \RequirePackage{times}
 \RequirePackage[T1]{fontenc}
@@ -62,6 +65,7 @@
 \newcommand{\@citystatezip}{}
 \newcommand{\@phone}{}
 \newcommand{\@webpage}{}
+\newcommand{\@qrtitle}{}
 
 \renewcommand{\author}[1]{\renewcommand{\@authorname}{#1}}
 \newcommand{\email}[1]{\urldef{\@email}{\url}{#1}}
@@ -69,8 +73,51 @@
 \newcommand{\citystatezip}[1]{\renewcommand{\@citystatezip}{#1}}
 \newcommand{\phone}[1]{\renewcommand{\@phone}{#1}}
 \newcommand{\webpage}[1]{\urldef{\@webpage}{\url}{#1}}
+\newcommand{\qrtitle}[1]{\renewcommand{\@qrtitle}{#1}}
+
+\newcommand{\maketopaddr}{
+      \ifthenelse{\equal{\@webpage}{}}{
+        \ifthenelse{\equal{\@streetaddress}{}}{}{\@streetaddress\par\noindent}
+      }
+      {
+        \ifthenelse{\equal{\@streetaddress}{}}{\@webpage\par\noindent}{
+          \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+            \@streetaddress & \@webpage
+          \end{tabular*}
+          \par\noindent
+        }
+      }
+}
+
+\newcommand{\makebotaddr}{
+      \ifthenelse{\equal{\@citystatezip}{} \and \equal{\@phone}{}}{
+      }{
+        \ifthenelse{\equal{\@citystatezip}{} \or \equal{\@phone}{}}{
+          \ClassError{resume}{
+            Only one of \protect\streetaddress and \protect\citystatezip given
+          }{
+            You must either define both \protect\streetaddress and \protect\citystatezip,
+            or define neither of them.
+          }
+        }{
+          \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+                      \@citystatezip & \@phone
+                                \end{tabular*}
+        }
+      }
+}
+
+\newcommand{\makeqrcode}{
+  \begin{wrapfigure}{r}{1in}
+    \vspace{-12pt}
+    \begin{pspicture}(-5mm,-3mm)(3in,3in)
+    \psbarcode{\@qrtitle}{eclevel=L}{qrcode}
+    \end{pspicture}
+  \end{wrapfigure}
+}
 
 \renewcommand{\maketitle}{{%
+  \makeqrcode
   \setlength{\@headerscratch}{\linewidth*2/3}%
   \noindent \lrule{\@headerscratch}{1.5pt}%
   \vspace{\headerbuffer}%
@@ -87,33 +134,10 @@
   \par\nointerlineskip\noindent%
   % Typeset webpage/phone in columns if both are specified, or
   % just on the LHS if only one is.
-  \begin{small}%
-    \ifthenelse{\equal{\@webpage}{}}{%
-      \ifthenelse{\equal{\@streetaddress}{}}{}{\@streetaddress\par\nointerlineskip\noindent}%
-    } {%
-      \ifthenelse{\equal{\@streetaddress}{}}{\@webpage\par\nointerlineskip\noindent}{%
-        \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}%
-          \@streetaddress & \@webpage%
-        \end{tabular*}%
-        \par\nointerlineskip\noindent%
-      }%
-    }%
-    \ifthenelse{\equal{\@citystatezip}{} \and%
-      \equal{\@phone}{}}{}{%
-      \ifthenelse{\equal{\@citystatezip}{} \or %
-        \equal{\@phone}{}}{%
-          \ClassError{resume}{%
-            Only one of \protect\streetaddress and \protect\citystatezip given
-          }{%
-            You must either define both \protect\streetaddress and \protect\citystatezip,
-            or define neither of them.
-          }%
-        }{%
-%
-          \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}%
-            \@citystatezip & \@phone %
-          \end{tabular*}%
-        }}%
+  \begin{small}
+    \maketopaddr
+    \makebotaddr
+    \vspace{0.4in}
   \end{small}
 }}
 
