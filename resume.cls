@@ -109,10 +109,12 @@
 
 \newcommand{\makeqrcode}{
   \begin{wrapfigure}{r}{1in}
-    \vspace{-12pt}
-    \begin{pspicture}(-5mm,-3mm)(3in,3in)
-    \psbarcode{\@qrtitle}{eclevel=L}{qrcode}
-    \end{pspicture}
+    \includegraphics[width=20mm]{qrcode.png}
+%    \vspace{-12pt}
+%    \begin{pspicture}(-5mm,-3mm)(3in,3in)
+%    \psbarcode{\@qrtitle}{eclevel=L}{qrcode}
+%    \end{pspicture}
+%    \@qrtitle
   \end{wrapfigure}
 }
 
