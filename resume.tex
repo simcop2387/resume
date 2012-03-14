@@ -13,35 +13,26 @@
 \webpage{http://www.simcop2387.info}
 \streetaddress{101 Columbus Ct}
 \citystatezip{Dallas GA, 30132}
-
-\qrtitle{
-BEGIN:VCARD\
-N:Voots;Ryan\
-ADR:;;101 Columbus Ct.;Dallas;GA;30132;\
-EMAIL:ryan@voots.org\
-TEL:678-551-2387\
-URL:http://simcop2387.info/\
-END:VCARD\
-}
+% \citystatezip{  }
 
 \usepackage{geometry}
 
-\addtolength{\oddsidemargin}{-.5in}
-\addtolength{\evensidemargin}{-.5in}
-\addtolength{\topmargin}{-.5in}
+	\addtolength{\oddsidemargin}{-.5in}
+	\addtolength{\evensidemargin}{-.5in}
+	\addtolength{\topmargin}{-.5in}
 
-\addtolength{\textwidth}{1.0in}
-\addtolength{\textheight}{1.375in}
+	\addtolength{\textwidth}{1.0in}
+	\addtolength{\textheight}{1.375in}
 
 % is this the real life?  is this just fantasy?
 \usepackage[unicode=true, 
  bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
  breaklinks=true,pdfborder={0 0 1},backref=false,colorlinks=true]
  {hyperref}
-\hypersetup{pdftitle={MediaTemple resume},
+\hypersetup{pdftitle={EdgeCast resume},
  pdfauthor={Ryan Voots},
  pdfsubject={If you're reading this, I made this in LaTeX and I'm glad you're really scouring my resume.},
- pdfkeywords={media, temple, resume, mediatemple, are, you, really, a, search, engine}}
+ pdfkeywords={edge, cast, resume, edgecast, are, you, really, a, search, engine}}
 
 
 % For more compact lists.
@@ -87,6 +78,35 @@ HTML; CSS; IPv4 and IPv6 networking; strong verbal and written communication ski
 
 \section{Experience}
 
+\subsection{Work History}
+
+\affiliation[Programmer]{Contract Work}{2011}
+\begin{compactitem}
+\item Created Application to retrieve data from Google Analytics and perform customized reports on data importable into spreadsheets and other report creation software.
+\end{compactitem}
+
+\affiliation[Web Designer, Javascript Programmer, Backend Programmer]{Things Done Later}{2011}
+\begin{compactitem}
+\item Created interactive interface and backend for Things Done Later.  \url{http://www.thingsdonelater.com} code available at \url{https://github.com/simcop2387/TDL}.
+\item Backend consists of a lightweight FastCGI Perl backend capable of handling large loads without requiring large investments in server capacity.
+\item Frontend is created using JQuery and features a fully secure login using HMAC-SHA256 challenge-response to allow authentication without transmitting sensitive data.
+\end{compactitem}
+
+\affiliation[Web Designer, Javascript Programmer]{Not A New Yorker}{2010}
+\begin{compactitem}
+\item Created several designs and implemented them for \url{http://www.notanewyorker.com/} and related sites.
+\end{compactitem}
+
+\affiliation[Programmer]{Cyphrus Federation of Underwater Activities}{2010}
+
+\begin{compactitem}
+\item Created interactive dive tables to plan no decompression dives without the aide of an expensive dive computer.
+\item The Perl backend was created to be edited and worked with using the existing workflow of the client.
+\item More Information: \url{http://www.oceanssearch.com/}
+\end{compactitem}
+
+\vspace{0.2in}
+
 \subsection{Open Source Work}
 
 \affiliation[~]{Github}{~}
@@ -99,7 +119,7 @@ HTML; CSS; IPv4 and IPv6 networking; strong verbal and written communication ski
 \begin{compactitem}
 \item Farnsworth is a dynamically typed functional and imperative programming language.  
 It is being designed for applied mathematics and physics.  Currently has a working implementation 
-consisting of 26,000 lines of code, including a testing suite and specification for the parts of the language that are finalized.
+consisting of 26,000 lines of code, including a testing suite for the parts of the language that are finalized.
 \item More Information: \url{http://www.simcop2387.info/}
 \end{compactitem}
 
@@ -126,11 +146,11 @@ with CSS3 for a modern layout with MultiMarkup for creating documents.
 \item Did some optimization on the original OpenGL and other graphics code in the project
 \end{compactitem}
 
-\subsection{Work History}
+\affiliation[Creator, Lead Programmer]{MediaSched}{2005-}
 
-\affiliation[Web Designer, Javascript Programmer]{Personal Project}{2010}
 \begin{compactitem}
-\item Created several designs for \url{http://www.notanewyorker.com/} and related sites.
+\item MediaSched is a program for easily running any kind of scheduled and unscheduled media playback.  Supporting the use of existing calendar/scheduling software for the selection of simple to complex play lists.
+\item More Information: \url{http://github.com/simcop2387/MediaSched}
 \end{compactitem}
 
 \section{Education}
