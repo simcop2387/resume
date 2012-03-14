@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage{auto-pst-pdf,pst-barcode}
+
+\begin{document}
+
+\begin{pspicture}(-5mm,-3mm)(1.5in,1in)
+\psbarcode
+  {9781860742712}{includetext guardwhitespace}{ean13}
+\end{pspicture}
+
+\vspace{0.5in}
+
+\begin{pspicture}(-5mm,-3mm)(1.5in,1in)
+\psbarcode
+  {9781860742712}{includetext guardwhitespace}{isbn}
+\end{pspicture}
+
+% these cause a problem, see below
+
+\vspace{0.5in}
+
+\begin{pspicture}(1in,1in)
+\psbarcode{http://www.dante.de}{}{qrcode}
+\end{pspicture}
+
+\vspace{0.5in}
+
+\begin{pspicture}(1in,1in)
+\psbarcode{Herbert Voss}{rows=48 columns=48 parse}{qrcode}
+\end{pspicture}
+
+\end{document}

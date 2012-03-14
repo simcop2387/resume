@@ -1,0 +1,53 @@
+% Cover letter using letter.cls
+\documentclass[11pt]{letter} % default is 10 pt
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+\usepackage{newcent}   % uses new century schoolbook postscript font
+\usepackage[unicode=true,
+bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+breaklinks=true,pdfborder={0 0 1},backref=false,colorlinks=true,filecolor=cyan,urlcolor=cyan]{hyperref}
+% the following commands control the margins:
+\topmargin=-1in    % Make letterhead start about 1 inch from top of page
+\textheight=8.5in  % text height can be bigger for a longer letter
+\oddsidemargin=0pt % leftmargin is 1 inch
+\textwidth=6.5in   % textwidth of 6.5in leaves 1 inch for right margin
+
+\newcommand{\comment}[1]{} % for commenting out some things
+
+\begin{document}
+
+
+\signature{Ryan Voots}                  % name for signature 
+\longindentation=0pt                       % needed to get closing flush left
+\let\raggedleft\raggedright                % needed to get date flush left
+ 
+\begin{letter}{
+Margo Lindenmayer \\
+MTL Consulting, Inc.}
+
+\begin{center}
+\large\bf Ryan J. Voots \\
+101 Columbus Court \\ Dallas, GA 30132 \\ (678) 551-2387
+\end{center} 
+% \vfill % forces letterhead to top of page
+\vspace{1in}
+
+\opening{Dear Mr. Voyle:}
+
+I would like to introduce myself to you and provide some brief highlights of the type of work I can perform.
+
+I am well experienced with both hardware and software.  I have successfully designed and written numerous software projects that are open source.  In addition to being able to take a software project from start to finish, I have experience with writing technical documentation for them, including writing tests to show that the software performs to the specifications and documentation.
+
+On the hardware side, I have rack mounted existing servers to create a more organized workspace.  I have also installed security cameras, and set up a dedicated monitoring system to record any movement.
+
+I welcome the opportunity to speak with you further about my experience and background.  I have included my resume and would appreciate any direction you might have in helping me find someone who could use my help.  I can be contacted by email at ryan@voots.org, or by phone at 678-551-2387.  Thank you in advance for your time. 
+
+\closing{Sincerely,}
+
+\end{letter}
+ 
+
+\end{document}
+
+
+
+
