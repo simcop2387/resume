@@ -11,9 +11,9 @@
 \phone{678-551-2387}
 \email{ryan@voots.org}
 \webpage{http://www.simcop2387.info}
-\streetaddress{3767 Clarington Dr}
-\citystatezip{Los Angeles, CA 90034}
-%\citystatezip{  }
+\streetaddress{101 Columbus Ct}
+\citystatezip{Dallas GA, 30132}
+\citystatezip{  }
 
 \usepackage{geometry}
 
@@ -67,39 +67,16 @@ To start a career developing software that will challenge my knowledge and requi
 \section{Skills}
 \begin{description}
 \item[Programming Languages:]
-Perl, C/C++, C\#, Javascript, Python, Java, SQL, PHP
+Perl, C/C++, C\#, Javascript, Java, SQL, PHP
 \item[Operating Systems:]
 Linux, Windows NT/2000/XP, some Solaris and BSD
 \item[Applications and Libraries:]
-PostgreSQL, MySQL, Apache, Lighttpd, Git, CVS, Subversion, Asterisk
-\item[Hardware:]
-Extensive experience with Cisco, HP, F5, and other intelligent router and switch systems.
+PostgreSQL, MySQL, Apache, Lighttpd, Git, CVS, Subversion
 \item[Miscellaneous:]
 HTML; CSS; IPv4 and IPv6 networking; excellent troubleshooting, problem solving, and debugging skills; very quick learner.
 \end{description}
 
-\section{XML}
-\begin{compactitem}
-\item Creation of DTDs against existing documents to aid in validation of future input
-\item Dealing with multiple similar but incompatible feeds from multiple developers
-\item Creating XPath queries to pull data from XML
-\item Use of both SAX style and DOM style parsers
-\end{compactitem}
-
-\vspace{0.1in}
-
 \section{Experience}
-
-\subsection{Linux}
-\begin{compactitem}
-\item I have been using linux on most machines that I've setup since 1999.  I have experience with Debian, Gentoo, Ubuntu, CentOS and Slackware.
-\item I have also helped in diagnosing errors in hardware drivers that lead to both poor performance and incorrect behavior.
-\end{compactitem}
-
-\subsection{Asterisk}
-\begin{compactitem}
-\item I have previously setup and maintained a VoIP system for several other open source developers when they desired a simple way to communicate with voice for a project.
-\end{compactitem}
 
 \subsection{Work History}
 
@@ -109,12 +86,10 @@ HTML; CSS; IPv4 and IPv6 networking; excellent troubleshooting, problem solving,
 \item Assisting in Quality Assurance for new releases before going out to customers
 \item Fixing bugs in supported products
 \item Assisting the training of new personnel
-\item Helping customers with administrating the software to manage their networks
 \end{compactitem}
 
 \affiliation[System Administrator]{Jeff Stewart}{2011}
 \begin{compactitem}
-\item Monitoring systems and applications to fix problems before they become visible to users
 \item Determine the cause of service interruptions from software crashes
 \item Diagnose network interruptions and worked with service provider to fix and provide a timeline to customers
 \item Provide direct technical support to customers to fix or work around any issues that come up
@@ -142,7 +117,6 @@ HTML; CSS; IPv4 and IPv6 networking; excellent troubleshooting, problem solving,
 
 \vspace{0.2in}
 
-% \pagebreak
 \subsection{Open Source Work}
 
 \affiliation[~]{Github}{~}
@@ -191,7 +165,7 @@ with CSS3 for a modern layout with MultiMarkup for creating documents.
 
 \section{Education}
 \affiliation{Kennesaw State University}{2010}
-\affiliation{Belmont Abbey College}{2003-2007}
+
 \begin{compactitem}
 \item Studying for a degree in Computer Science.  Focusing on programming, networks, and databases.
 \end{compactitem}

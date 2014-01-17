@@ -121,7 +121,7 @@
 \renewcommand{\maketitle}{{%
   \makeqrcode
   \setlength{\@headerscratch}{\linewidth*2/3}%
-  \noindent \lrule{\@headerscratch}{1.5pt}%
+  \noindent \rule{\@headerscratch}{1.5pt}%
   \vspace{\headerbuffer}%
   \ifthenelse{\equal{\@email}{}}{%
     \par\nointerlineskip\noindent\makebox[\linewidth]{\textbf{\Large{\@authorname}}}%
@@ -132,7 +132,7 @@
   \par\nointerlineskip\noindent%
   \hspace{\linewidth}%
   \hspace{-\@headerscratch}%
-  \rrule{\@headerscratch}{1.5pt}%
+  \rule{\@headerscratch}{1.5pt}%
   \par\nointerlineskip\noindent%
   % Typeset webpage/phone in columns if both are specified, or
   % just on the LHS if only one is.
@@ -146,13 +146,13 @@
 \renewcommand{\section}[1]{%
   \goodbreak\vspace{\secskip}%
   \par\nointerlineskip\noindent\textbf{\textsc{\large\makebox[\linewidth][l]{#1}}}\vspace{\headerbuffer}\par\nointerlineskip\noindent%
-  \lrule{\linewidth}{0.4pt}%
+  \rule{\linewidth}{0.4pt}%
   \vspace{\headerbuffer}\par\nointerlineskip}
 
 \renewcommand{\subsection}[1]{%
   \goodbreak\vspace{\secskip}\par\nointerlineskip%
   \textbf{#1}\vspace{\headerbuffer}\par\nointerlineskip%
-  \noindent\lrule{\linewidth}{0.4pt}%
+  \noindent\rule{\linewidth}{0.4pt}%
   \vspace{\headerbuffer}\par\nointerlineskip
 }
 
