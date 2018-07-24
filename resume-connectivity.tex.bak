@@ -64,13 +64,13 @@
 \section{Skills}
 \begin{description}
 \item[Programming Languages:]
-Perl, Javascript (Node and some browser), Python, C/C++, SQL
+Perl, C/C++, C\#, Javascript, Java, SQL
 \item[Operating Systems:]
-Linux, Windows, some OSX \& BSD
+Linux, Windows, some BSD
 \item[Applications and Libraries:]
 Oracle, PostgreSQL, MySQL, RabbitMQ, Apache, Lighttpd, Git, CVS, Subversion
 \item[Miscellaneous:]
-HTML; CSS; IPv4 and IPv6 networking; strong verbal and written communication skills; excellent troubleshooting, problem solving, and debugging skills; very fast at getting up to speed on existing systems.
+HTML; CSS; IPv4 and IPv6 networking; strong verbal and written communication skills; excellent troubleshooting, problem solving, and debugging skills; very quick learner.
 \end{description}
 
 \section{Experience}
@@ -81,16 +81,16 @@ HTML; CSS; IPv4 and IPv6 networking; strong verbal and written communication ski
 \begin{compactitem}
 \item Maintained existing legacy systems
   \begin{compactitem}
-  \item Thoroughly documented both architecture and functionality in system
+  \item Thouroghly documented both architecture and functionality in system
   \item Helped devops team to properly upgrade and deploy legacy system onto upgraded platforms
   \end{compactitem}
-\item Drove primary back-end development of new features and products
-\item Integrated new vendor systems with the legacy back-ends
+\item Drove primary backend development of new features and products
+\item Integrated new vendor systems with the legacy backends
 \end{compactitem}
 
 \affiliation[Senior Software Engineer]{Ziprecruiter}{2016}
 \begin{compactitem}
-\item Updated account creation flow back-end code to handle new flows to aid in user conversions
+\item Updated account creation flow backend code to handle new flows to aid in user conversions
 \item Designed an internal service for secure resume and document conversion
   \begin{compactitem}
   \item New internal service replaced an external one that was costing a significant amount to run
@@ -121,15 +121,38 @@ HTML; CSS; IPv4 and IPv6 networking; strong verbal and written communication ski
 \item Lead the move between data centers migrating almost all production systems.
   \begin{compactitem}
   \item Moved and tested code from perl 5.14 to perl 5.16
-  \item Changed deployment system to work as an unprivileged user to accommodate more securely setup systems
+  \item Changed deployment system to work as an unpriviledged user to accomidate more securely setup systems
   \item Assisted the overnight deployment and testing
   \end{compactitem}
 \item Re-architeched and finished long standing rewrite of inventory automation system
-\item Performed SCRUM Master duties involving planning, auditing, and making sure that projects were being worked on and not blocked
+\item Perfomed SCRUM Master duties involving planning, auditing, and making sure that projects were being worked on and not blocked
 \item Took on project management responsibilities for several projects to ensure they were done properly and on time
 \end{compactitem}
 
-Previous employment information available on request.
+\affiliation[Programmer]{Contract Work}{2011}
+\begin{compactitem}
+\item Created Application to retrieve data from Google Analytics and perform customized reports on data importable into spreadsheets and other report creation software.
+\end{compactitem}
+
+\affiliation[Web Designer, Javascript Programmer, Backend Programmer]{Things Done Later}{2011}
+\begin{compactitem}
+\item Created interactive interface and backend for Things Done Later.  \url{http://www.thingsdonelater.com} code available at \url{https://github.com/simcop2387/TDL}.
+\item Backend consists of a lightweight FastCGI Perl backend capable of handling large loads without requiring large investments in server capacity.
+\item Frontend is created using JQuery and features a fully secure login using HMAC-SHA256 challenge-response to allow authentication without transmitting sensitive data.
+\end{compactitem}
+
+\affiliation[Web Designer, Javascript Programmer]{Not A New Yorker}{2010}
+\begin{compactitem}
+\item Created several designs and implemented them for \url{http://www.notanewyorker.com/} and related sites.
+\end{compactitem}
+
+\affiliation[Programmer]{Cyphrus Federation of Underwater Activities}{2010}
+
+\begin{compactitem}
+\item Created interactive dive tables to plan no decompression dives without the aide of an expensive dive computer.
+\item The Perl backend was created to be edited and worked with using the existing workflow of the client.
+\item More Information: \url{http://www.oceanssearch.com/}
+\end{compactitem}
 
 \vspace{0.2in}
 
@@ -145,7 +168,14 @@ Previous employment information available on request.
 \item App::EvalserverAdvanced is an application sandbox and ephemeral container system that allows secure and safe execution of arbitrary programs and source code.  It's currently powering teaching and learning tools for the Perl community on IRC and https://perl.bot/. 
 \item The sandbox and container are completely configurable to allow for multiple security contexts and environments for different applications and requirements.
 \item The server has a formally defined protocol allowing for asynchronous job creation and reporting.  This allows both parallel running of applications and in theory priority based queuing of jobs based on desired priority and session history.
-\item More Information: \url{https://metacpan.org/pod/App::EvalServerAdvanced}
+\item More Information: \url{http://www.simcop2387.info/}
+\end{compactitem}
+
+
+\affiliation[Creator, Lead Designer, and Lead Developer]{App::EvalserverAdvanced}{??? - Present}
+\begin{compactitem}
+\item App::EvalserverAdvanced is an application sandbox and ephemeral container system that allows secure and safe execution of arbitrary programs and source code.  It's currently powering teaching and learning tools for the Perl community on IRC and https://perl.bot/. 
+\item More Information: \url{http://www.simcop2387.info/}
 \end{compactitem}
 
 \affiliation[Creator, Lead Designer, and Lead Developer]{Farnsworth Programming Language}{2008-}
@@ -153,10 +183,10 @@ Previous employment information available on request.
 \item Farnsworth is a dynamically typed functional and imperative programming language.  
 It is being designed for applied mathematics and physics.  Currently has a working implementation 
 consisting of 26,000 lines of code, including a testing suite for the parts of the language that are finalized.
-\item More Information: \url{https://www.simcop2387.info/}
+\item More Information: \url{http://www.simcop2387.info/}
 \end{compactitem}
 
-\affiliation[Creator, Lead Programmer]{AutoSub}{2009}
+\affiliation[Creator, Lead Programmer]{AutoSub}{2009-}
 
 \begin{compactitem}
 \item A project to aide in the creation of closed captions by identifying portions of 
