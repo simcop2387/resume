@@ -31,7 +31,7 @@
 \RequirePackage[tmargin=1in,bmargin=1in]{geometry}
 
 \definecolor{rulestartcolor}{rgb}{0,0,0}
-\definecolor{ruleendcolor}{rgb}{0.4,0.4,0.4}
+\definecolor{ruleendcolor}{rgb}{0,0,1}
 
 \newlength{\headerbuffer}
 \setlength{\headerbuffer}{2pt}
@@ -121,7 +121,7 @@
 \renewcommand{\maketitle}{{%
   \makeqrcode
   \setlength{\@headerscratch}{\linewidth*2/3}%
-  \noindent \rule{\@headerscratch}{1.5pt}%
+  \noindent \rrule{\@headerscratch}{1.5pt}%
   \vspace{\headerbuffer}%
   \ifthenelse{\equal{\@email}{}}{%
     \par\nointerlineskip\noindent\makebox[\linewidth]{\textbf{\Large{\@authorname}}}%
@@ -132,7 +132,7 @@
   \par\nointerlineskip\noindent%
   \hspace{\linewidth}%
   \hspace{-\@headerscratch}%
-  \rule{\@headerscratch}{1.5pt}%
+  \lrule{\@headerscratch}{1.5pt}%
   \par\nointerlineskip\noindent%
   % Typeset webpage/phone in columns if both are specified, or
   % just on the LHS if only one is.
