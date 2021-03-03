@@ -1,0 +1,240 @@
+% resume.tex
+%
+% (c) 2007 Ryan Voots <simcop2387@yahoo.com>
+% $Id: resume.tex,v 1.7 2007/05/19 22:36:29 ryan Exp $
+%
+
+\documentclass[table,tmargin=1in,bmargin=1in,letterpaper]{resume}
+\usepackage{microtype}
+
+% my info
+\author{Ryan Voots}
+\phone{678-551-2387}
+\email{ryan@voots.org}
+\webpage{http://github.com/simcop2387}
+\streetaddress{3223 Rhett Butler Pl}
+\citystatezip{Charlotte, NC 28270}
+% \citystatezip{  }
+
+\usepackage{geometry}
+
+	\addtolength{\oddsidemargin}{-.5in}
+	\addtolength{\evensidemargin}{-.5in}
+	\addtolength{\topmargin}{-.5in}
+
+	\addtolength{\textwidth}{1.0in}
+	\addtolength{\textheight}{1.375in}
+
+% is this the real life?  is this just fantasy?
+\usepackage[unicode=true, 
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=true,pdfborder={0 0 1},backref=false,colorlinks=true]
+ {hyperref}
+\hypersetup{pdftitle={Ryan Voots Resume},
+ pdfauthor={Ryan Voots},
+ pdfsubject={If you're reading this, I made this in LaTeX and I'm glad you're really scouring my resume.},
+ pdfkeywords={resume, are, you, really, a, search, engine}}
+
+
+% For more compact lists.
+\usepackage{paralist}
+
+\usepackage{colortbl}
+
+\definecolor{lightgray}{gray}{0.95}
+\definecolor{darkgray}{gray}{0.90}
+
+% for urls
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=blue
+}
+
+% Multi-colored rules! (John Q is desperate)
+\definecolor{ruleendcolor}{rgb}{0.2, 0.2, 0.6}
+
+\begin{document}
+
+\maketitle
+\vspace{0.1in}
+
+\section{Skills}
+\begin{description}
+\item[Programming Languages:]
+Perl, JavaScript (Node, react and others), Python, C/C++, SQL
+\item[Operating Systems:]
+Linux, Windows, some OS X
+\item[Applications and Libraries:]
+PostgreSQL, MySQL, RabbitMQ, Nginx, Apache, Lighttpd, Git, CVS, Subversion, some previous Oracle experience
+\item[Miscellaneous:]
+HTML; CSS; IPv4 and IPv6 networking; strong verbal and written communication skills; excellent troubleshooting, problem solving, and debugging skills; very fast at getting up to speed on existing systems.
+\end{description}
+
+\section{Experience}
+
+\subsection{Work History}
+
+\affiliation[DevOps Contractor]{ThinkIQ}{March 2020-June 2020}
+\begin{compactitem}
+\item Main Project - Rearchitecting deployment stack
+  \begin{compactitem}
+  \item Original architecture had lots of overhead, deploying about a dozen pieces in containers in kubernetes.  Including production databases.  This lead to performance and capacity issues on customer systems
+  \item I redesigned the system to be deployable as a single VM image, reducing overhead and making hosted database solutions such as Amazon RDS and Azure Database easier to use.
+  \item Helped consolidate the design of internal scripting systems using python to have a single managed environment on the new VM images.  Previously there were multiple copies of python depending on which part of the system an action was started from, each with their own copies of installed modules and vendor libraries that were frequently different versions.
+  \end{compactitem}
+\item Developer Support
+  \begin{compactitem}
+  \item Provided experienced code reviews for vendor python libraries and code.
+  \item Assisted in securing the design of the authentication system combing GraphQL and the existing CMS (Joomla) so that future API clients can be authenticated securely among services using JWT tokens.
+  \end{compactitem}
+\item Customer Production Systems
+  \begin{compactitem}
+  \item Setup additional monitoring for production systems (Healthchecks.io + PagerDuty)
+  \item Diagnosed overcommited customer systems that were having intermittent issues with IO availability
+  \item Normal maintenance ensuring customer backups were working properly and testing restoration functionality of systems onto internal staging systems  
+  \end{compactitem}
+\end{compactitem}
+
+\affiliation[Senior Software Engineer]{Intellisurvey}{August-November 2019}
+\begin{compactitem}
+\item Backend Perl development
+  \begin{compactitem}
+  \item Implemented new parsing and grammar rules for survey language
+  \item Fixed parsing errors for survey language
+  \end{compactitem}
+\end{compactitem}
+
+\affiliation[Contractor]{Buzli}{April/May 2019}
+\begin{compactitem}
+\item Created AWS infrastructure with Terraform to log ad data for future reports and auditing
+\item Created software to pull data from 3rd party ad servers
+\item Began development of integration with 3rd party ad provider to existing infrastructure
+\end{compactitem}
+
+\affiliation[Senior Software Engineer]{Sold.com}{2018-2019}
+\begin{compactitem}
+\item Backend service development: Java and Python
+\item Middle-ware Node.js work to securely and safely expose backend services to the outside world
+\item Frontend work redesigning key parts of functionality and UX.
+\item Created address matching and normalization service
+  \begin{compactitem}
+  \item Takes in human and public record addresses to match between differing formatting and abbreviations
+  \item Matched public record data to determine correct valuation of properties based on existing records
+  \end{compactitem}
+\item Helped revising design of data tracking of the web frontend using Segment.io
+\item Aided Data team in understanding existing application and data coming from the application to develop reports
+\item Managed Jenkins service for automatic deployments to development environments and manually triggered deployments to production
+\item Managed existing AWS infrastructure
+  \begin{compactitem}
+  \item Setup new services with ECS and ECR
+  \item Setup new domains and load balancers
+  \item Created reporting infrastructure for Data/BI team (Databases, Redshift, EC2 instances)
+  \end{compactitem}
+\end{compactitem}
+
+\affiliation[Senior Software Engineer]{Surf-Air}{2017-2018}
+\begin{compactitem}
+\item Maintained existing legacy systems
+  \begin{compactitem}
+  \item Thoroughly documented both architecture and functionality in system
+  \item Helped DevOps team to properly upgrade and deploy legacy system onto upgraded platforms
+  \end{compactitem}
+\item Drove primary back-end development of new features and products
+\item Integrated new vendor systems with the legacy back-ends
+\end{compactitem}
+
+\affiliation[Senior Software Engineer]{Ziprecruiter}{2016}
+\begin{compactitem}
+\item Updated account creation flow back-end code to handle new flows to aid in user conversions
+\item Designed an internal service for secure resume and document conversion
+  \begin{compactitem}
+  \item New internal service replaced an external one that was costing a significant amount to run
+  \item New service also allowed for multiple conversions to be done in parallel to take better advantage of larger servers
+  \item Allowed asynchronous conversion of resumes and documents to PDF for embedding in browsers
+  \item Designed the system to be secured against corrupted documents and attacks to prevent it from being able to disclose PII
+  \end{compactitem}
+\end{compactitem}
+
+\affiliation[Senior Software Engineer]{Connectivity}{2015}
+\begin{compactitem}
+\item Spearheaded integration with multiple phone systems for data acquisition
+  \begin{compactitem}
+  \item Twilio: Simulring/Call hunting and forwarding
+  \item Ringcentral: Direct integration via API
+  \item Grasshopper via Twilio
+  \item Vonage, AT\&T, Time Warner, et al.
+  \end{compactitem}
+\item Helped architect internal API/Reporting and Analytics engine
+\item Created automated text messaging system based on scheduled hours for clients
+\item Designed and developed a system for managing and heuristically detecting burned IP addresses for crawling various data sources 
+\end{compactitem}
+
+\affiliation[Lead Developer/Team Lead/Scrum Master]{Rent.com}{2012-2014}
+\begin{compactitem}
+\item Lead the integration of Rent.com property management systems with Salesforce.com to replace internal sales tools.
+\item Integrated Rent.com systems with parent company property management systems.
+\item Lead the move between data centers migrating almost all production systems.
+  \begin{compactitem}
+  \item Moved and tested code from Perl 5.14 to Perl 5.16
+  \item Changed deployment system to work as an unprivileged user to accommodate more securely setup systems
+  \item Assisted the overnight deployment and testing
+  \end{compactitem}
+\item Re-architeched and finished long standing rewrite of inventory automation system
+\item Performed SCRUM Master duties involving planning, auditing, and making sure that projects were being worked on and not blocked
+\item Took on project management responsibilities for several projects to ensure they were done properly and on time
+\end{compactitem}
+
+Further employment information available on request.
+
+\vspace{0.2in}
+\subsection{Open Source Work}
+
+
+\affiliation[~]{GitHub}{~}
+\begin{compactitem}
+\item You can also find many more projects on my GitHub account at \url{https://github.com/simcop2387/} and as the perlbot project at \url{https://github.com/perlbot/}
+\end{compactitem}
+
+\affiliation[Creator, Lead Designer, and Lead Developer]{App::EvalserverAdvanced}{2006? - Present}
+\begin{compactitem}
+\item App::EvalserverAdvanced is an application sandbox and ephemeral container system that allows secure and safe execution of arbitrary programs and source code.  It's currently powering teaching and learning tools for the Perl community on IRC and \url{https://perl.bot/}. 
+\item The sandbox and container are completely configurable to allow for multiple security contexts and environments for different applications and requirements.
+\item The server has a formally defined protocol allowing for asynchronous job creation and reporting.  This allows both parallel running of applications and in theory priority based queuing of jobs based on desired priority and session history.
+\item More Information: \url{https://metacpan.org/pod/App::EvalServerAdvanced} and \url{https://github.com/perlbot/}
+\end{compactitem}
+
+\affiliation[Creator, Lead Designer, and Lead Developer]{Farnsworth Programming Language}{2008-}
+\begin{compactitem}
+\item Farnsworth is a dynamically typed functional and imperative programming language.  
+It is being designed for applied mathematics and physics.  Currently has a working implementation 
+consisting of 26,000 lines of code, including a testing suite for the parts of the language that are finalized.
+\item More Information: \url{https://www.simcop2387.info/}
+\end{compactitem}
+
+\affiliation[Creator, Lead Programmer]{AutoSub}{2009}
+
+\begin{compactitem}
+\item A project to aide in the creation of closed captions by identifying portions of 
+video that contain human speech using various types of signal analysis.
+\item More Information: \url{https://github.com/simcop2387/autosub}
+\end{compactitem}
+
+\affiliation[Creator, Lead Programmer]{MediaSched}{2005-}
+
+\begin{compactitem}
+\item MediaSched is a program for easily running any kind of scheduled and unscheduled media playback.  Supporting the use of existing calendar/scheduling software for the selection of simple to complex play lists.
+\item More Information: \url{http://github.com/simcop2387/MediaSched}
+\end{compactitem}
+
+
+\section{References}
+\begin{tabular}{lll}
+\rowcolor{white} Kaitlyn Parkhurst & Senior Software Engineer at Intellisurvey & symkat@symkat.com \\
+\rowcolor{lightgray} Jeff Yoak & Project Manager and Consultant & jeff@yoak.com \\
+\rowcolor{white} Ben Tilly & Software Engineer at ThinkIQ & btilly@gmail.com
+\end{tabular}
+\end{document}
